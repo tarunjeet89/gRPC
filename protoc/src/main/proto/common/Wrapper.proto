@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files=true;
+option java_package = "com.protobuf.models";
+
+import "google/protobuf/wrappers.proto";
+import "common/address.proto";
+import "common/car.proto";
+
+
+message PersonWrapper{
+
+	google.protobuf.Int32Value age = 1;
+	string name = 2;
+	common.Address address=3;
+	common.Car car=4;
+
+}
+
+
